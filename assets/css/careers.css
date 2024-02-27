@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Larken';
+    src: url("https://use.typekit.net/af/eac799/0000000000000000774c4d94/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/eac799/0000000000000000774c4d94/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/eac799/0000000000000000774c4d94/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n3&v=3") format("opentype");
+    /*src: url('/assets/font/LarkenDEMO-Thin.ttf'), /* Modern Browsers */
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url("https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/1be3c2/00000000000000007735e606/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden !important;
+    background-color: #333;
+    font-family: 'Larken', sans-serif;
+    /* Use 'Larken' as the preferred font, fallback to a generic sans-serif if not available */
+}
+
+.main-nav
+{
+    padding: 12px;
+}
+
+.big-nav {
+    display: block;
+}
+
+.small-nav {
+    display: none;
+}
+
+.small-nav .text-bg-dark {
+    background-color: #d9b26a !important;
+    padding: 30px;
+}
+
+
+.small-nav .navbar-toggler {
+    border: 1px solid white;
+}
+
+.nav-bar {
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    transition: 0.6s;
+    width: 100%;
+    background-color: #333;
+}
+
+.main-nav .logo {
+    width: 58%;
+    height: 100%;
+}
+
+header ul li a span {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.200rem;
+    letter-spacing: 1px;
+    color: #d9b26a;
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300;
+    font-stretch: normal;
+
+}
+
+header ul .list-nav {
+    padding-inline-end: 2rem;
+}
+
+/**/
+
+.mission
+{
+    background-color: #d9b26a;
+}
+
+.mission h3{
+    color: #333;
+    line-height: 1.2;
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+    font-display: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mission p {
+    color: #000;
+    font-family: 'proxima-nova', sans-serif !important;
+    font-size: 1;
+    font-display: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+}
+
+/**/
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    margin-bottom: 60px;
+}
+
+.input-container {
+    flex: 1;
+    margin-right: 6%;
+}
+
+label {
+    display: block;
+    color: #d9b26a;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.underlined-input {
+    border: none;
+    border-bottom: 1px solid #d9b26a;
+    outline: none;
+    width: 100%;
+    background-color: #333;
+    color: #dbdbdb;
+    font-weight: bold;
+    font-size: large;
+}
+
+#fileInput{
+    display: none;
+}
+
+.custom-file-input
+{
+    margin-bottom: 1.9rem;
+}
+
+.contact .button {
+    border: solid .2px #d9b26a;
+    width: 12.5rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: #d9b26a;
+    height: fit-content;
+    padding: 1rem 1.5rem 0.7rem;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.line {
+    width: 100%;
+    height: .5px;
+    background-color: #d9b26a;
+    margin-bottom: 20px;
+}
+
+/**/
+
+footer p
+{
+    display: block;
+    margin: 1rem 0 2rem;
+    color: #dbdbdb;
+    font-size: .875rem;
+    font-family: 'proxima-nova', sans-serif !important;
+    max-width: 90%;
+}
+
+footer span
+{
+    color: #dbdbdb;
+    padding-inline-end: 1.5rem;
+}
+
+footer span a{
+    text-decoration: none;
+    color: #dbdbdb;
+    font-size: 1.2rem;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    padding-bottom: .3rem;
+}
+
+footer ul li a{
+    color: #dbdbdb!important;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none!important;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background:#d9b26a ;
+}
+
+
+@media screen and (max-width:1000px) {
+    * {
+        overflow-x: hidden !important;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li,
+    a {
+        overflow-y: hidden !important;
+    }
+
+    .big-nav {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+    }
+
+    .mission
+    {
+        margin-top: 20%;
+    }
+
+    .content-mission
+    {
+        padding: 30px;
+    }
+
+    .mission h3{
+        color: #333;
+        line-height: 1.2;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .contact
+    {
+        padding: 25px 0px 25px 0px;
+    }
+
+    .input-group
+    {
+        margin: 0px;
+        display: block;
+    }
+
+    .input-container
+    {
+        margin-bottom: 50px;
+    }
+    
+    footer {
+        padding-top: 35px;
+    }
+
+    footer img{
+        margin-bottom: 20px;
+    }
+
+    footer ul
+    {
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    footer ul li {
+        padding-bottom: 0rem;
+    }
+    
+    footer ul li a {
+        font-size: .7rem;
+    }
+
+    .icons
+    {
+        margin-bottom: 19px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
